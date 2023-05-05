@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+    <link href="./css/input.css" rel="stylesheet">
+    <link rel="icon" href="./assets/DMicon.png">
+    <title>Men</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <my-header id=nav-ph w3-include-html='navbar.php'></my-header>
+    <script type="module" src="javascript/navbar.js"></script>
+    
+    <script src="javascript/bundle.js"></script>
+
+    <div name="Men" class='flex flex-col justify-between w-full min-h-screen bg-LMbg dark:bg-DMbg'>
+        <div class='pt-24 lg:px-12'>
+            <!-- Header -->
+            <div class='relative px-8 mb-8 lg:mb-16'>
+                <!-- Title Box -->
+                <div class='absolute inset-0 flex flex-col items-center px-20 py-8 m-auto rounded bg-LMbg dark:bg-DMbg bg-opacity-90 dark:bg-opacity-90 w-fit h-fit'>
+                    <h1 class='pb-3 text-3xl font-bold text-center lg:text-4xl text-LMtext1 dark:text-DMtext1'>MEN</h1>
+                </div>
+                <!-- Images -->
+                <div class='grid justify-center grid-cols-2 mx-auto sm:flex max-w-7xl'>
+                    <img src='https://cdn.shopify.com/s/files/1/0293/9277/products/12-16-22Studio5_RD_DJ_10-25-48_31_FNMN490_Black_P_9289_SG_360x.jpg?v=1671499275' alt='image1' class='object-cover object-center bg-white sm:w-1/4 aspect-square' />
+                    <img src='https://m.media-amazon.com/images/I/71WNFiCpjrL._AC_UL1500_.jpg' alt='image2' class='object-cover object-center bg-white sm:w-1/4 aspect-square' />
+                    <img src='https://i.pinimg.com/736x/03/cf/8d/03cf8df91d9dee47b8bf97a4c13757c3.jpg' alt='image3' class='object-cover object-center bg-white sm:w-1/4 aspect-square' />
+                    <img src='http://cdn.shopify.com/s/files/1/0293/9277/products/12-15-22Studio5_RT_DJ_15-06-16_85_FNMH1328_BrownCombo_0189_SG_1200x1200.jpg?v=1671218722' alt='image4' class='object-cover object-center bg-white sm:w-1/4 aspect-square' />
+                </div>
+            </div>
+
+            <!-- Subsections -->
+            <div class='flex flex-col justify-center gap-3 text-xl font-semibold text-center text-LMtext1 dark:text-DMtext1 md:text-2xl'>
+                <button id='ViewAll' type='button' class='mx-auto text-xl font-semibold text-center Category active md:text-2xl'>All Items</button>
+                <div
+                    class='grid justify-center grid-cols-3 gap-5 px-6 md:flex md:gap-8 lg:gap-20 '>
+                    <button id='Outerwear' type='button' class='Category' >Outerwear</button>
+                    <button id='Tops' type='button' class='Category' >Tops</button>
+                    <button id='Suits' type='button' class='Category' >Suits</button>
+                    <button id='Bottoms' type='button' class='Category' >Bottoms</button>
+                    <button id='Shoes' type='button' class='Category' >Shoes</button>
+                    <button id='Activewear' type='button' class='Category' >Activewear</button>
+                </div>
+            </div>
+            
+            <!-- Products -->
+            <div id='products' 
+                class='grid items-start grid-cols-2 gap-10 px-5 py-16 text-LMtext1 dark:text-DMtext1 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 place-items-center'>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <my-header id=footer-ph w3-include-html='footer.html'></my-header>
+    <script type="module" src="javascript/footer.js"></script>
+</body>
+
+</html>

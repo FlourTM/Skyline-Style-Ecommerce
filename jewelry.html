@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+    <link href="./css/input.css" rel="stylesheet">
+    <link rel="icon" href="./assets/DMicon.png">
+    <title>Jewelry</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <my-header id=nav-ph w3-include-html='navbar.php'></my-header>
+    <script type="module" src="javascript/navbar.js"></script>
+    
+    <script src="javascript/bundle.js"></script>
+
+    <div name="Jewelry" class='flex flex-col justify-between w-full min-h-screen bg-LMbg dark:bg-DMbg'>
+        <div class='pt-24 lg:px-12'>
+            <!-- Header -->
+            <div class='relative px-8 mb-8 lg:mb-16'>
+                <!-- Title Box -->
+                <div class='absolute inset-0 flex flex-col items-center px-20 py-8 m-auto rounded bg-LMbg dark:bg-DMbg bg-opacity-90 dark:bg-opacity-90 w-fit h-fit'>
+                    <h1 class='pb-3 text-3xl font-bold text-center lg:text-4xl text-LMtext1 dark:text-DMtext1'>JEWELRY</h1>
+                </div>
+                <!-- Images -->
+                <div class='grid justify-center grid-cols-2 mx-auto sm:flex max-w-7xl'>
+                    <img src='https://www.vancleefarpels.com/content/dam/rcq/vca/19/13/10/4/1913104.png.transform.vca-w820-2x.png' alt='image1' class='object-cover object-center bg-white sm:w-1/4 aspect-square' />
+                    <img src='https://www.davidyurman.com/dw/image/v2/BGCL_PRD/on/demandware.static/-/Sites-dy-master-catalog/default/dwac53b405/images/hi-res/onmodel/B05524MSSRBRBLK_ONMODEL.jpg?ch=3651&cw=6477&cx=0&cy=263&https%3A%2F%2Fwww.davidyurman.com%2Fdw%2Fimage%2Fv2%2FBGCL_PRD%2Fon%2Fdemandware.static%2F-%2FSites-dy-master-catalog%2Fdefault%2Fdwac53b405%2Fimages%2Fhi-res%2Fonmodel%2FB05524MSSRBRBLK_ONMODEL.jpg=undefined&sm=fit&sw=3000&sh=3000' alt='image2' class='object-cover object-center bg-white sm:w-1/4 aspect-square' />
+                    <img src='https://cdn.shopify.com/s/files/1/2417/4137/products/7mmcubangold2_1080x1080_crop_center.jpg.webp?v=1669064813' alt='image3' class='object-cover object-center bg-white sm:w-1/4 aspect-square' />
+                    <img src='https://www.zales.com/productimages/processed/V-20313066_1_800.jpg?pristine=true' alt='image4' class='object-cover object-center bg-white sm:w-1/4 aspect-square' />
+                </div>
+            </div>
+
+            <!-- Subsections -->
+            <div class='flex flex-col justify-center gap-3 text-xl font-semibold text-center text-LMtext1 dark:text-DMtext1 md:text-2xl'>
+                <button id='ViewAll' type='button' class='mx-auto text-xl font-semibold text-center Category active md:text-2xl'>All Items</button>
+                <div
+                    class='grid justify-center grid-cols-3 gap-5 px-6 md:flex md:gap-8 lg:gap-20 '>
+                    <button id='Earrings' type='button' class='Category' >Earrings</button>
+                    <button id='Necklaces' type='button' class='Category' >Necklaces</button>
+                    <button id='Rings' type='button' class='Category' >Rings</button>
+                    <button id='Bracelets' type='button' class='Category' >Bracelets</button>
+                    <button id='Watches' type='button' class='Category' >Watches</button>
+                    <button id='FineJewelry' type='button' class='Category' >Fine Jewelry</button>
+                </div>
+            </div>
+            
+            <!-- Products -->
+            <div id='products' 
+                class='grid items-start grid-cols-2 gap-10 px-5 py-16 text-LMtext1 dark:text-DMtext1 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 place-items-center'>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <my-header id=footer-ph w3-include-html='footer.html'></my-header>
+    <script type="module" src="javascript/footer.js"></script>
+</body>
+
+</html>
