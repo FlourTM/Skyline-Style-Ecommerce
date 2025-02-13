@@ -1,7 +1,5 @@
 # Skyline Style
 
-### Link: https://bit.ly/Skyline-Style-2
-
 ## <br> Introduction
 Skyline Style is a mock e-commerce website designed for young adults that offers a wide range of clothing products. It was drafted, designed, and implemented in under three months as a capstone project for CSC 4900 Advanced Software Project class.
 
